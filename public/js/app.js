@@ -16,8 +16,8 @@ weatherForm.addEventListener('submit', (e)=>{
     e.preventDefault();
     moist.textContent = 'Loading';
     kili.textContent = ''
-    fetch(`http://localhost:3000/weather?address=${location}`).then((response)=>{
-  response.json().then((response)=>{
+    fetch(`/weather?address=${location}`).then((response)=>{
+    response.json().then((response)=>{
       if(response.error){
           console.log(response.error)
         return moist.textContent = response.error;
