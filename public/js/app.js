@@ -4,17 +4,7 @@ fetch('http://puzzle.mead.io/puzzle').then((response)=>{
       console.log(data);
  })
 })
-fetch('http://localhost:3000/weather?address=kanchikacherla').then((response)=>{
-  response.json().then((error,response)=>{
-      if(error){
-          console.log(error)
-      }
-      else {
-          console.log(response.location);
-          console.log(response.forecast);
-      }
-  })
-})
+
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
 const moist = document.querySelector('#moist')
