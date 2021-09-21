@@ -27,7 +27,8 @@ weatherForm.addEventListener('submit', (e)=>{
           moist.textContent = response.location;
           
           console.log(response.forecast);
-        return kili.textContent = `The weather is ${response.forecast.weather_descriptions} and temperature is ${response.forecast.temperature}. It feels like ${response.forecast.feelslike}`
+        return kili.textContent = `The weather is ${response.forecast.weather_descriptions} and 
+        temperature is ${response.forecast.temperature}. It feels like ${response.forecast.feelslike} and visibility is ${response.forecast.visibility}. But the cloud cover is ${response.forecast.cloudclover}`
       }
   })
 })

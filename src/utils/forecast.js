@@ -12,7 +12,9 @@ const forecast = ((a,b,callback)=>{
             callback(undefined,{
                 weather_descriptions: body.current.weather_descriptions[0],
                 temperature: body.current.temperature,
-                feelslike: body.current.feelslike
+                feelslike: body.current.feelslike,
+                cloudclover: body.current.cloudcover,
+                visibility: body.current.visibility
             })
         }
     })
